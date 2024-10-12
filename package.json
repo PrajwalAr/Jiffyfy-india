@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "my-jiffyfy-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,55 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@dh-react-hooks/use-raf": "^0.9.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@prisma/client": "^3.15.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "bcrypt": "^5.1.1",
+    "cookie": "^0.4.1",
+    "cookies": "^0.8.0",
+    "easy-peasy": "^5.0.4",
+    "format-duration": "^1.4.0",
+    "framer-motion": "^4.1.17",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.11"
+    "react-howler": "^5.2.0",
+    "react-icons": "^4.3.1",
+    "reset-css": "^5.0.1",
+    "swr": "^1.1.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bcrypt": "^5.0.2",
+    "@types/howler": "^2.2.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "autoprefixer": "^10.4.20",
+    "babel-plugin-superjson-next": "^0.4.2",
     "eslint": "^8",
-    "eslint-config-next": "14.2.11"
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-next": "14.2.11",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss": "^8.4.47",
+    "prettier": "^2.4.1",
+    "prisma": "^3.6.0",
+    "tailwindcss": "^3.4.12",
+    "ts-node": "^10.4.0",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
